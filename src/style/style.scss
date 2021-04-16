@@ -1,0 +1,30 @@
+@import "~bootstrap/scss/bootstrap";
+
+$titles: 'Bahnschrift',sans-serif;
+
+h2 {
+    font-family:$titles;
+    font-weight: bold;
+}
+
+.strip {
+    width: 100%;
+    min-height: 50vh;
+}
+
+#clashHeader {
+    background-image: url('../public/img/banner.jpg');
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 825px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 140px;
+    margin: auto;
+    align-self: center;
+    margin-bottom: 510px;
+}
