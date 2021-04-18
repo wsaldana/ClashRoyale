@@ -4,6 +4,7 @@ import Header from './Header';
 import Download from './Download';
 import Timeline from './Timeline';
 import Latest from './Latest';
+import Carousel from './Videos';
 
 class App extends Component {
     render(){
@@ -13,6 +14,7 @@ class App extends Component {
                 <Download />
                 <Timeline />
                 <Latest />
+                <Carousel />
             </div>
         );
     }

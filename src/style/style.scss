@@ -194,3 +194,52 @@ td {
 #tw {
     background-image: url('../public/icons/twitter.png');
 }
+
+#carousel_strip {
+    height: 850px;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    align-items: center;
+}
+
+.card img, .playbtn{
+    width: 775px;
+}
+
+.card a{
+    text-decoration: none;
+    font-family: $paragraphs;
+}
+
+.playbtn{
+    height: 432px;
+    position: absolute;
+    background-image: url('../public/icons/play.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px;
+}
+
+#card_title {
+    padding: 50px;
+    width: 775px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    background-color: white;
+}
+
+#card_title h3 {
+    width:fit-content;
+    font-weight: 600;
+    color: rgb(53, 138, 243);
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+#card_title img{
+    width: 125px;
+    margin-top: 10px;
+    margin-right: 10px;
+    justify-self: end;
+}
