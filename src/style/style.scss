@@ -162,7 +162,7 @@ td {
     margin-block-start: 0;
 }
 
-.media .icon {
+.media .icon, #footer_contact a {
     text-indent: -9999px;
     background-size: auto 23px !important;
     background-position: top center !important;
@@ -193,6 +193,14 @@ td {
 
 #tw {
     background-image: url('../public/icons/twitter.png');
+}
+
+#lk {
+    background-image: url('../public/icons/linkedeen.png');
+}
+
+#gd {
+    background-image: url('../public/icons/glassdoor.png');
 }
 
 #carousel_strip {
@@ -242,4 +250,67 @@ td {
     margin-top: 10px;
     margin-right: 10px;
     justify-self: end;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 160px;
+}
+
+#footer p, #footer_links a {
+    font-family: $paragraphs;
+    font-size: small;
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+#footer a {
+    text-decoration: none;
+}
+
+#footer_links a {
+    color: white;
+}
+
+#footer_contact {
+    width: 1600px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(102, 102, 92);
+}
+
+#footer_contact p {
+    margin-bottom: 0;
+}
+
+.footer_btn,  #logo_link{
+    justify-self: end;
+}
+
+#footer_links {
+    width: 1600px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#footer_links img {
+    width: 55px;
+    margin-top: 60px;
+}
+
+#footer_links p {
+    color: rgb(102, 102, 92);
+    font-weight: 500;
+    max-width: 10em;
+    margin-top: 30px;
+    line-height: 20px;
 }

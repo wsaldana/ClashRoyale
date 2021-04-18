@@ -5,6 +5,7 @@ import Download from './Download';
 import Timeline from './Timeline';
 import Latest from './Latest';
 import Carousel from './Videos';
+import Footer from './Footer';
 
 class App extends Component {
     render(){
@@ -15,6 +16,7 @@ class App extends Component {
                 <Timeline />
                 <Latest />
                 <Carousel />
+                <Footer />
             </div>
         );
     }
