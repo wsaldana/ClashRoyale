@@ -4,6 +4,7 @@
 $titles: 'Bahnschrift',sans-serif;
 $paragraphs: 'Helvetica';
 $grayLine: rgb(221, 221, 221);
+$inactive: rgb(116, 116, 116);
 
 h2 {
     font-family:$titles;
@@ -313,4 +314,136 @@ td {
     max-width: 10em;
     margin-top: 30px;
     line-height: 20px;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    padding: 0 16px;
+    height: 103px;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    color: $inactive;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    height: 103px;
+    padding-top: 22px;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: $inactive;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    color: white;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #000000c0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 1600px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    padding: 25px;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: $inactive;
+    padding: 12px 22px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+
+#menu_logo {
+    width: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.menu {
+    background-color: black;
+    width: 1600px;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#lupa {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-left: 1px solid rgb(71,71,71);
+    margin-right: 12px;
+    height: 100%;
+}
+
+#lupa img{
+    width: 19px;
+    margin-left: 24px;
+    opacity: 0.3;
+}
+
+#lupa img:hover{
+    opacity: 1;
+}
+
+#supercell_id {
+    height: 30px;
+    margin-left: 725px;
+}
+
+#dots {
+    background-color: rgb(39, 39, 39);
+    padding-top: 0;
+    padding-bottom: 5px;
+    height: 30px;
+    margin-top: 20px;
+    width: 63px;
+    border-radius: 5px;
+}
+
+#dots p {
+    font-size: 45px;
+    font-weight:400;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 8px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
