@@ -7,7 +7,7 @@ export default function Timeline() {
     return (
         <div className="strip" id="timeline_strip">
             <div className="content_timeline">
-                <img src={mosquetera} id="mosquetera"/>
+                <img src={mosquetera} id="mosquetera" className="animate__animated animate__fadeInRight"/>
                 <h2>LAUNCH IS ONLY THE BEGINNING</h2>
                 <p id="txt-timeline">Clash Royale has been constantly evolving to offer more user-friendly, more consistent and more fun online experiences for Supercell gamers.</p>
                 <FontAwesomeIcon icon={faFlag} className="icon"/>
@@ -18,7 +18,7 @@ export default function Timeline() {
                     <td>Star Levels</td>
                     <td>Trophy Road</td>
                     <td>Seasons</td>
-                </tr>
+                </tr> 
                 <div id="lines" />
                 <div id="timeline"/>
                 <div id="dates">
